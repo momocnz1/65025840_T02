@@ -1,6 +1,6 @@
 body{
     margin: 0px;
-    background-color: #FCE4E2;
+    background: #FCE4E2;
 }
 .navtop{
     list-style-type: none;
@@ -55,37 +55,56 @@ body{
     padding-right: 5px;
     float: left;
 }
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+    }
+
+    #title {
+        font-size: 24px; 
+    }
+
+    .navb {
+        padding: 8px 10px; 
+        font-size: 14px; 
+    }
+}
 .row{
     margin: 20px;
     font-family:'Paytone One';font-style: normal;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.group1{
+    display: flex; 
+    flex-direction: row; 
+    flex-shrink: 0;
     text-align: center;
 }
 #tod{
+    margin-bottom: 1%;
+    margin-left: 200px;
     width: 186px;
     height: 73px;
-    margin-left: 200px;
-    margin-top: 50px;
     background: #ABADD6;
     font-family: 'Paytone One';
-    font-style: normal;
-    text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-}
+    border-radius: 20px; 
+    color: #FFFFFF; 
+    font-size: 40px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
-#toa{
-    height: 55px;
-    margin-top: 10px;
-    margin-bottom: 2px;
-    line-height: 67px;
-    text-indent: 0px;
 }
 #mont{
-    position: absolute;
     width: 291px;
     height: 73px;
-    left: 528px;
-    top: 130px;
     font-size: 30px;
     font-weight: 400;
     font-family: 'Paytone One';
@@ -93,152 +112,40 @@ body{
     color: #5F689F;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.day{
-    position: absolute;
-    width: 967px;
-    height: 91px;
-    left: 450px;
-    top: 223px;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align-last: justify;
-    text-align: center;
-    line-height: 40px;
-    font-family: 'Paytone One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    background: #ABADD6;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.05);
-    border-radius: 20px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-#d1{
-    padding-left: 15px;
-}
-#d2{
-    padding-right: 10px;
-    padding-left: 25px;
-}
-#d3{
-    padding-left: 40px;
-}
-#d4{
-    padding-left: 40px;
-}
-#d5{
-    padding-left: 50px;
-    padding-right: 5px;
-}
-#d6{
-    padding-left: 45px;
-}
-.da{
-    font-family: 'Bai Jamjuree';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 50px;
-    padding-left: 30px;
-    padding-right: 20px;
-}
 #br1{
     width: 186px;
     height: 45px;
-    left: 200px;
-    top: 266px;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 200px;
     line-height: 45px;
     font-size: 18px;
     font-style: normal;
     font-family: 'Bai Jamjuree';
     text-align: center;
-    position: absolute;
+    position: relative;
     background: #5F689F;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 14px;
 }
-#call{
-    position: absolute;
-    width: 436px;
-    height: 407px;
-    left: 50px;
-    top: 443px;
-    background: #E0E2F1;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 18px;
-}
-#date{
-    position: absolute;
-    width: 77px;
-    height: 36px;
-    left: 15px;
-    top: 15px;
-    font-family: 'Paytone One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
-    text-align: center;
-    background: #5F689F;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
-}
-#mo{
-    position: absolute;
-    left: 130px;
-    font-family: 'Paytone One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 34px;
-    text-align: center;
-}
-#sa{
-    position: absolute;
-    font-family: 'Paytone One';
-    text-align: center;
-    font-weight: 400;
-    top: 75px;
-}
-#s{
-    padding-left: 40px;
-}
-#m{
-    padding-left: 20px;
-}
-#te{
-    padding-left: 20px;
-}
-#we{
-    padding-left: 20px;
-}
-#th{
-    padding-left: 20px;
-}
-#f{
-    padding-left: 20px;
-}
-#sta{
-    padding-left: 20px;
-}
 #ac{
-    position: absolute;
     width: 904px;
     height: 1119px;
-    left: 513px;
-    top: 480px;
     padding-left: 80px;
     padding-top: 40px;
     background: #E0E2F1;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
+    margin-left: auto; 
+    margin-right: 0px;
 }
+
 #ti{
     position: absolute;
     width: 234px;
     height: 40px;
-    left: 151px;
-    top: 900px;
+    left: 141px;
+    top: 870px;
     border: none;
     padding-left: 10px;
     background: #E0E2F1;
@@ -251,8 +158,8 @@ body{
     text-align: center;
     font-weight: 400;
     font-size: 20px;
-    top: 890px;
-    left: 91px;
+    top: 860px;
+    left: 81px;
 }
 #tim{
     position: absolute;
@@ -320,7 +227,7 @@ body{
     width: 78px;
     height: 36px;
     left: 296px;
-    top: 1105px;
+    top: 1075px;
     border: none;
     background: #5F689F;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -363,234 +270,69 @@ body{
     width: 395px;
     height: 48px;
     left: 37px;
-    top: 1473px;
+    top: 1373px;
     border: none;
     background: #5F689F;
     border-radius: 18px;
 }
-.aa1{
-    width: 370px;
-    position: absolute;
-    font-family: 'Paytone One';
-    text-align: center;
-    font-weight: 400;
-    top: 105px;
-    left: 50px;
-    text-align-last: justify;
-    text-decoration: none;
+/* เริ่มจากสำหรับอุปกรณ์ที่กว้างกว่า 768px (คอมพิวเตอร์) */
+@media (min-width: 769px) {
+    #ti {
+        left: 151px;
+        top: 900px;
+    }
+    #aa {
+        top: 890px;
+        left: 91px;
+    }
+    #tim {
+        left: 151px;
+        top: 959px;
+    }
+    #aaa {
+        top: 949px;
+        left: 91px;
+    }
+    #dat {
+        left: 151px;
+        top: 1019px;
+    }
+    #aaaa {
+        top: 1009px;
+        left: 91px;
+    }
+    #save {
+        left: 296px;
+        top: 1105px;
+    }
+    #how {
+        left: 49px;
+        top: 1173px;
+    }
+    #emo {
+        left: 57px;
+        top: 1261px;
+    }
+    #sub {
+        left: 37px;
+        top: 1401px;
+    }
+    #mood {
+        left: 37px;
+        top: 1473px;
+    }
+}
+
+/* สำหรับอุปกรณ์ความกว้างระหว่าง 481px ถึง 768px (แท็บเล็ต) */
+@media (min-width: 481px) and (max-width: 768px) {
     
 }
-#a29{
-    width: 30px;
-    height: 40px;
-    color: #ABADD6;
-    display: inline-block;
+
+/* สำหรับอุปกรณ์ความกว้างน้อยกว่าหรือเท่ากับ 480px (มือถือ) */
+@media (max-width: 480px) {
+   
 }
-#a30{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a31{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a1{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a2{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a3{
-    width: 30px;
-    height: 40px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a4{
-    width: 30px;
-    height: 40px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a5{
-    width: 30px;
-    height: 40px;
-    color: #ABADD6;
-    display: inline-block;
-}
-#a6{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a7{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a8{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a9{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a10{
-    width: 30px;
-    height: 40px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a11{
-    width: 30px;
-    height: 40px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a12{
-    width: 30px;
-    height: 40px;
-    color: #ABADD6;
-    display: inline-block;
-}
-#a13{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a14{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a15{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a16{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a16{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a17{
-    width: 30px;
-    height: 40px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a18{
-    width: 30px;
-    height: 40px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a19{
-    width: 30px;
-    height: 40px;
-    color: #ABADD6;
-    display: inline-block;
-}
-#a20{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a21{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a22{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a23{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a24{
-    width: 30px;
-    height: 40px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a25{
-    width: 30px;
-    height: 40px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a26{
-    width: 30px;
-    height: 40px;
-    color: #ABADD6;
-    display: inline-block;
-}
-#a27{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
-#a28{
-    width: 30px;
-    height: 40px;
-    padding-left: 5px;
-    display: inline-block;
-    color: #ABADD6;
-}
+
 .ac{
     font-family: 'Paytone One';
     font-style: normal;
@@ -609,4 +351,69 @@ body{
     float: left;
     margin-left: 20px;
     color: #5F689E;
+}
+.calendar1 {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto; 
+    margin-right: 0px;
+    position: relative; 
+    top: 0; 
+    margin-top: 0;
+    color: #E0E2F1;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Paytone One';
+    flex-shrink: 0;
+    background-color: #ABADD6;
+    width: 947px;
+    height: 61px;
+    padding: 20px;
+    border-radius: 8px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.days {
+    display: flex;
+    background-color: #ABADD6;
+    border-radius: 8px;
+}
+
+.day {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 8px;
+}
+
+.date {
+    flex: 1;
+    text-align: center;
+    padding: 8px 0;
+    font-weight: bold;
+    font-family: 'Bai Jamjuree';
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.today {
+    color: #FFFFFF;
+}
+.other-day {
+    color: #E0E2F1;
+    
+}
+.date:last-child {
+    border-right: none;
+}
+
+.date:hover {
+    background-color: #f1f1f1;
 }
